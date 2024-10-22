@@ -1,0 +1,88 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  }
+html {
+	scroll-behavior: smooth;
+}
+body {
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #2c5364,
+      #203a43,
+      #0f2027
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #2c5364,
+      #203a43,
+      #0f2027
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      width: 500px;
+      /* justify-content: center; */
+      /* margin-left: 30%; */
+  }
+  .dialogs{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-right: 50px;
+      height: 300px;
+      transform: translate(-50%, -50%);
+      border-radius: 20px;
+      border-color: grey;
+      background-color: #0f2027;
+  }
+  .characters{
+    padding: 10px;
+    margin-right: 5px;
+  }
+  .close-button {
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed for spacing */
+    right: 10px; /* Adjust the right position as needed for spacing */
+    font-size: 20px;
+    line-height: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999; /* Color for the "X" */
+  }
+  #name{
+    width: 250px;
+    height: 30px;
+  }
+  .h1test {
+    color: whitesmoke;
+    text-align: center;
+    font-family: "Cairo Play", sans-serif;
+    padding-top: 50px;
+    font-size: 27px;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.78);
+  }
+  .match_units{
+    text-align: center;
+  }
+  .labels{
+    color: whitesmoke;
+    font-size: 37px;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.78);
+  }
+  .inputs{
+    height: 50px;
+    width: auto;
+    font-size: 30px;
+    text-align: left;
+  }
+  .h1test :hover {
+    cursor: pointer;
+    font-size: 60px;
+    color: #54b3d6;
+  }
+  .button :hover{
+    color: #54b3d6;
+  }

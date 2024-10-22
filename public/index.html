@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta Name="viewport" content="width=device-width, initial-scale=2">
+    <title>Web-game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <dialog class="dialogs" id="starting">
+      <div>
+        <h1 style="margin-left: 30%; color: antiquewhite;">اضع اسمك</h1>
+        <br />
+        <input id='name' type="text">
+      </div>
+      <br />
+      <button style="margin-left: 35%;" type="button" onclick="setname()"><h1>اٍبدأ اللعبة</h1></button>
+    </dialog>
+    <dialog style="width: 400px; max-width: 400px;left:65%;top:105%;margin-left: 05px;" class="dialogs" id="pick_char">
+      <h1 style="margin-left: 30%; color: antiquewhite;">اختر الحرف</h1>
+      <h1 style="margin-left: 30%; color: antiquewhite;">سيتم الاختيار العشوائي للحرف خلال 3 ثواني</h1>
+         <div id="chars">
+         </div>
+    </dialog>
+    <div class="h1test">
+      <img src="./banner.png" style="max-width: 500px;height: 450px;">
+    <h6>عمل زينة و اَية و سما</h6>
+        <!-- <h1>لعبة حيوان جماد</h1> -->
+    </div>
+
+        <div class="match_units">
+                    <b id="points" style="float: left;" class="labels">: نقاطك </b> <b id="position"  class="labels">:  ترتيبك</b>  <b id="username" style="float: right;"  class="labels">: اسمك</b>
+                    <div><b id="connection_status" style="float: right;" class="labels"> : الحالة </b> </div>
+                    <br /><br /><br />
+                    <hr>
+                    <div id="new_name_D" ><input id="new_name_I" style="height: 30px;" type="text"><b class="labels">اضع اسم جديد : </b><button onclick="setnewname()" id="new_name_B">تغيير الاسم</button></div>
+                    <br /><br />    <br /><br />  
+          <h6 id="status" class="labels">waiting for the game to start</h6>
+
+          <h1 id="char_label" class="labels"> : الحرف</h1>
+          <br />
+          <form onsubmit="">
+            <div id="topics">
+            </div>
+            <br /> <br /> <br /> <br /> <br /> <br />
+            <h1 id="empty" class="labels"></h1>
+            <button type="submit" class="button" onclick="send_answers();return false;"><h1>SUBMIT</h1></button>
+          </form>            
+      </div>
+      <br /><br /><br /><br /><br /><br /><br />
+           
+  </body>
+</head>
+<script src="./socket.io/socket.io.js"></script>
+<script src='index.js'></script>
+</html>

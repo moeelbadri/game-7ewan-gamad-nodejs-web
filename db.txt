@@ -1,0 +1,1 @@
+{"correct_words":[{"topic":"ولد","result":"احمد"},{"topic":"بنت","result":"اسيل"}],"close_words":[]}

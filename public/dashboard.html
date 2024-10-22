@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta Name="viewport" content="width=device-width, initial-scale=-1">
+        <title>Web-dashboard</title>
+        <link rel="stylesheet" href="dashboard.css" />
+
+    </head>
+<body >
+    <div id="control_panel" style="max-width: 70%">
+        <input class="inputs" type="text" value="ولد">
+        <input class="inputs" type="text" value="بنت">
+        <input class="inputs" type="text" value="حيوان">
+        <input class="inputs" type="text" value="نبات">
+        <input class="inputs" type="text" value="جماد">
+        <input class="inputs" type="text" value="بلاد">
+        <input class="inputs" type="text" >
+        <input class="inputs" type="text" >
+        <input class="inputs" type="text" >
+        <input class="inputs" type="text" >
+        <div">
+            <button id="correcting_finished" onclick="correcting_finished()" type="button"><h6>publish results</h6></button>
+            <button id="next_round" onclick="next_round()" type="button"><h6>next round</h6></button>
+            <button id="start_game" onclick="start_game()" type="button"><h6>start game</h6></button>
+            <button id="end_game" onclick="end_game()" type="button"><h6>end game</h6></button>
+            <button id="auto_correction" onclick="auto_correction()" type="button"><h6>automatic correction</h6></button>
+
+            <div></div> 
+            <input id="force_dupe" type="checkbox"><h6 style="display: inline;">force 5 points</h6>
+            <input id="append_db" type="checkbox"><h6 style="display: inline;">add to db</h6>
+
+        </div>
+      
+        <h6 id="status" class="labels"></h6>
+                <div id="round_results_checkup">
+            <div id="container_check">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./socket.io/socket.io.js"></script>
+<script src='dashboard.js'></script>
+</html>
